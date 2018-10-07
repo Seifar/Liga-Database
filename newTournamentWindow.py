@@ -1,8 +1,7 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.uic import *
-import random
-import sip
+import newTournamentDBHandler
 
 class NewTournamentWindow:
     def __init__(self):
@@ -30,6 +29,8 @@ class NewTournamentWindow:
         for i in self.shooter:
             shooters.append(i.itemAt(0).widget().text())
         enemys = []
+        for i in self.enemys:
+            enemys.append(i.itemAt(0).widget().text())
 
         #TODO: save in database
         #print("New Entry saved!")

@@ -7,6 +7,8 @@ __con__ = None
 __cursor__ = None
 __dbName__ = "scores.db"
 
+TABLE_tournaments = ["NAME", "KIND", "BOW", "DATE"]
+
 def __init__ ():
     if (__initialised__):
         return
