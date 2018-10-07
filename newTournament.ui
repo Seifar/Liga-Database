@@ -123,6 +123,20 @@
           </item>
          </widget>
         </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_bow">
+          <item>
+           <property name="text">
+            <string>Recurve</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Compound</string>
+           </property>
+          </item>
+         </widget>
+        </item>
        </layout>
       </item>
      </layout>
@@ -313,44 +327,7 @@
              <height>150</height>
             </rect>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_2">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_2">
-              <item>
-               <widget class="QLabel" name="label_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>Verein 1</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_4">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>Bearbeiten</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_5">
-                <property name="text">
-                 <string>Löschen</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
+           <layout class="QVBoxLayout" name="verticalLayout_enemysInner">
             <item>
              <spacer name="verticalSpacer_2">
               <property name="orientation">

@@ -11,6 +11,7 @@ class NewTournamentWindow:
         self.w.buttonBox.accepted.connect(self.handleExitWithSave)
         self.w.buttonBox.rejected.connect(self.closeWindow)
         self.w.pushButton_addShooter.clicked.connect(self.addShooter)
+        self.w.pushButton_addEnemy.clicked.connect(self.addEnemy)
 
         self.shooter = []
         self.enemys = []
@@ -23,6 +24,7 @@ class NewTournamentWindow:
     def handleExitWithSave(self):
         name = self.w.lineEdit_name.text()
         kind = self.w.comboBox_type.currentText()
+        bow = self.w.comboBox_bow.currentText()
         date = self.w.calendarWidget.selectedDate()
         shooters = []
         for i in self.shooter:
@@ -51,14 +53,35 @@ class NewTournamentWindow:
     #addes one shooter to the UI
     def addShooter(self):
         layout = QHBoxLayout()
-        label = QLineEdit("Schütze"+str(random.randint(0,100)))
+        label = QLineEdit("neuer Schütze")
         label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
         layout.addWidget(label)
-        #layout.addWidget(QPushButton("Bearbeiten"))
         layout.addWidget(QPushButton("Löschen"))
         layout.itemAt(1).widget().clicked.connect(self.removeShooter)
         self.shooter += [layout]
         self.w.verticalLayout_shootersInner.insertLayout(self.w.verticalLayout_shootersInner.count()-1, layout)
 
+    #removes onne shooter from the UI
+    def removeEnemy(self):
+        pressedButton = self.w.sender()
+
+        layoutToRemove = next(x for x in self.enemys if x.itemAt(1).widget() is pressedButton)
+        layoutToRemove.deleteLater()
+        index = self.enemys.index(layoutToRemove)
+        while layoutToRemove.count():
+            x = layoutToRemove.takeAt(0).widget()
+            x.deleteLater()
+        self.enemys.remove(layoutToRemove)
+
+    #addes one enemy to the UI
+    def addEnemy(self):
+        layout = QHBoxLayout()
+        label = QLineEdit("neuer Gegner")
+        label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        layout.addWidget(label)
+        layout.addWidget(QPushButton("Löschen"))
+        layout.itemAt(1).widget().clicked.connect(self.removeEnemy)
+        self.enemys += [layout]
+        self.w.verticalLayout_enemysInner.insertLayout(self.w.verticalLayout_enemysInner.count() - 1, layout)
 
 
