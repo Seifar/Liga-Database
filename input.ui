@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>262</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_18"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_schuetze">
+         <property name="text">
+          <string>Schütze</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QComboBox" name="comboBox_schuetze1">
+           <item>
+            <property name="text">
+             <string>Tobias Edlböck</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QComboBox" name="comboBox_schuetze2">
+           <item>
+            <property name="text">
+             <string>Niemand</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QComboBox" name="comboBox_schuetze3">
+           <item>
+            <property name="text">
+             <string>Niemand</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_match1">
+         <property name="text">
+          <string>Match 1</string>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_1_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_1_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_1_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_1_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_1_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_1_2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_match2">
+         <property name="text">
+          <string>Match 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_2_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_2_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_2_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_2_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_2_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_2_2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_match3">
+         <property name="text">
+          <string>Match 3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_3_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_3_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_3_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_3_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_3_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_3_2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_match4">
+         <property name="text">
+          <string>Match 4</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_4_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_4_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_13">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_4_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_4_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_4_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_4_2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_match5">
+         <property name="text">
+          <string>Match 5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_5_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_1_5_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_5_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_2_5_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_5_1"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_arrow_3_5_2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_home">
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_weiter">
+       <property name="text">
+        <string>Weiter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_schuetze1</tabstop>
+  <tabstop>comboBox_schuetze2</tabstop>
+  <tabstop>comboBox_schuetze3</tabstop>
+  <tabstop>lineEdit_arrow_1_1_1</tabstop>
+  <tabstop>lineEdit_arrow_1_1_2</tabstop>
+  <tabstop>lineEdit_arrow_2_1_1</tabstop>
+  <tabstop>lineEdit_arrow_2_1_2</tabstop>
+  <tabstop>lineEdit_arrow_3_1_1</tabstop>
+  <tabstop>lineEdit_arrow_3_1_2</tabstop>
+  <tabstop>lineEdit_arrow_1_2_1</tabstop>
+  <tabstop>lineEdit_arrow_1_2_2</tabstop>
+  <tabstop>lineEdit_arrow_2_2_1</tabstop>
+  <tabstop>lineEdit_arrow_2_2_2</tabstop>
+  <tabstop>lineEdit_arrow_3_2_1</tabstop>
+  <tabstop>lineEdit_arrow_3_2_2</tabstop>
+  <tabstop>lineEdit_arrow_1_3_1</tabstop>
+  <tabstop>lineEdit_arrow_1_3_2</tabstop>
+  <tabstop>lineEdit_arrow_2_3_1</tabstop>
+  <tabstop>lineEdit_arrow_2_3_2</tabstop>
+  <tabstop>lineEdit_arrow_3_3_1</tabstop>
+  <tabstop>lineEdit_arrow_3_3_2</tabstop>
+  <tabstop>lineEdit_arrow_1_4_1</tabstop>
+  <tabstop>lineEdit_arrow_1_4_2</tabstop>
+  <tabstop>lineEdit_arrow_2_4_1</tabstop>
+  <tabstop>lineEdit_arrow_2_4_2</tabstop>
+  <tabstop>lineEdit_arrow_3_4_1</tabstop>
+  <tabstop>lineEdit_arrow_3_4_2</tabstop>
+  <tabstop>lineEdit_arrow_1_5_1</tabstop>
+  <tabstop>lineEdit_arrow_1_5_2</tabstop>
+  <tabstop>lineEdit_arrow_2_5_1</tabstop>
+  <tabstop>lineEdit_arrow_2_5_2</tabstop>
+  <tabstop>lineEdit_arrow_3_5_1</tabstop>
+  <tabstop>lineEdit_arrow_3_5_2</tabstop>
+  <tabstop>pushButton_weiter</tabstop>
+  <tabstop>pushButton_home</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
