@@ -197,9 +197,6 @@
        <widget class="QCalendarWidget" name="calendarWidget">
         <property name="selectedDate">
          <date>
-          <year>2018</year>
-          <month>10</month>
-          <day>26</day>
          </date>
         </property>
         <property name="gridVisible">
