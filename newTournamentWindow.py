@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.uic import *
 import newTournamentDBHandler
+import GLOBAL
 
 class NewTournamentWindow:
     def __init__(self):
@@ -13,7 +14,7 @@ class NewTournamentWindow:
         self.w.pushButton_addEnemy.clicked.connect(self.addEnemy)
 
         self.shooter = []
-        self.enemys = []
+        self.enemies = []
 
     def run(self):
         self.w.show()
@@ -28,11 +29,20 @@ class NewTournamentWindow:
         shooters = []
         for i in self.shooter:
             shooters.append(i.itemAt(0).widget().text())
+        if len(shooters) < 3:
+            return -1
         enemys = []
-        for i in self.enemys:
+        for i in self.enemies:
             enemys.append(i.itemAt(0).widget().text())
+        if len(enemys) < 3:
+            return -1
 
-        #TODO: save in database
+        #save in database
+        sqlDate = GLOBAL.QDateToSQL(date)
+        sqlcommand = 'INSERT INTO {0}\n' \
+                     'values (\'{1}\', \'{2}\', \'{3}\', \'{4}\')'.format(GLOBAL.TABLE_name_tournaments, name, kind, bow, sqlDate)
+        GLOBAL.executeSQL(sqlcommand)
+
         #print("New Entry saved!")
         self.closeWindow()
 
@@ -66,13 +76,13 @@ class NewTournamentWindow:
     def removeEnemy(self):
         pressedButton = self.w.sender()
 
-        layoutToRemove = next(x for x in self.enemys if x.itemAt(1).widget() is pressedButton)
+        layoutToRemove = next(x for x in self.enemies if x.itemAt(1).widget() is pressedButton)
         layoutToRemove.deleteLater()
-        index = self.enemys.index(layoutToRemove)
+        index = self.enemies.index(layoutToRemove)
         while layoutToRemove.count():
             x = layoutToRemove.takeAt(0).widget()
             x.deleteLater()
-        self.enemys.remove(layoutToRemove)
+        self.enemies.remove(layoutToRemove)
 
     #addes one enemy to the UI
     def addEnemy(self):
@@ -82,7 +92,5 @@ class NewTournamentWindow:
         layout.addWidget(label)
         layout.addWidget(QPushButton("Löschen"))
         layout.itemAt(1).widget().clicked.connect(self.removeEnemy)
-        self.enemys += [layout]
+        self.enemies += [layout]
         self.w.verticalLayout_enemysInner.insertLayout(self.w.verticalLayout_enemysInner.count() - 1, layout)
-
-
