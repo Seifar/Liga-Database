@@ -43,7 +43,7 @@ class NewTournamentWindow:
                      'values (\'{1}\', \'{2}\', \'{3}\', \'{4}\')'.format(GLOBAL.TABLE_name_tournaments, name, kind, bow, sqlDate)
         GLOBAL.executeSQL(sqlcommand)
 
-        #print("New Entry saved!")
+        print("New Entry saved!")
         self.closeWindow()
 
     def closeWindow(self):

@@ -1,7 +1,9 @@
 from InputWindow import InputWindow
 from newTournamentWindow import NewTournamentWindow
+import GLOBAL
 
-# TODO datenbankschema entwerfen
+if __name__ == '__main__':
+    inputWin = NewTournamentWindow()
+    print(inputWin.run())
 
-inputWin = NewTournamentWindow()
-inputWin.run()
+    GLOBAL.exit()
